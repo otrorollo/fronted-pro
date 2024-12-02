@@ -8,6 +8,9 @@
 div.nav {
     background-color: c.$secondary-color;
     color: c.$primary-color;
+    h3 {
+        color: c.$primary-light-color;
+    }
     ul {
         text-align: center;
         li a {

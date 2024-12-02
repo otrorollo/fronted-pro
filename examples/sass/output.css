@@ -5,7 +5,7 @@
 }
 
 .home-button {
-  background-color: #97D8B2;
+  background-color: #22bc62;
 }
 
 .color-secondary, div.nav ul li a.disabled {
@@ -14,7 +14,10 @@
 
 div.nav {
   background-color: #531253;
-  color: #97D8B2;
+  color: #22bc62;
+}
+div.nav h3 {
+  color: rgb(183.8648648649, 242.1351351351, 208.0810810811);
 }
 div.nav ul {
   text-align: center;
@@ -25,7 +28,7 @@ div.nav ul li a {
   font-size: 15px;
   font-weight: 800;
   text-decoration: underline;
-  color: #97D8B2;
+  color: #22bc62;
 }
 div.nav ul li a.disabled {
   text-decoration: none;
