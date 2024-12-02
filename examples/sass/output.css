@@ -1,0 +1,15 @@
+/*
+:root {
+    --primary-color: $primary-color;
+}
+
+div {
+    color: var(--primary-color);
+}
+    */
+div {
+  color: #531253;
+  background-color: #A0ACAD;
+}
+
+/*# sourceMappingURL=output.css.map */

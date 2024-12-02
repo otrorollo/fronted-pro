@@ -7,7 +7,8 @@
     "example": "examples"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:example": "sass examples/sass/styles.scss examples/sass/output.css",
+    "sass:example:dev": "sass --watch examples/sass/styles.scss examples/sass/output.css"
   },
   "keywords": [],
   "author": "",
