@@ -1,0 +1,18 @@
+{
+  "name": "frontend-pro",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">     <img src=\"https://bootcamp.keepcoding.io/hs-fs/hubfs/logo%20keepcoding%20mail%20temarios@2x-100.jpg?width=300&height=175&name=logo%20keepcoding%20mail%20temarios@2x-100.jpg\" alt=\"KeepCoding Web Bootcamp XV - Frontend PRO\"> </div>",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0"
+  }
+}
