@@ -2,8 +2,11 @@
 // No se importan globalmente. Se utiliza la sentencia @use donde se vaya a utilizar
 // @import './config';
 // @import './mixins';
-@import './header';
-// @import './buttons';
+
+// No utlizamos import para archivos parciales.
+// Utilizamos @forward que no sobreescribe el contenido de variables
+@forward './buttons';
+@forward './header';
 
 // ....
 // Otro código

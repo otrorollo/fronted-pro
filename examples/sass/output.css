@@ -1,3 +1,13 @@
+.back-button, .home-button {
+  margin: 5px;
+  border-radius: 2px;
+  padding: 0.2em;
+}
+
+.home-button {
+  background-color: #97D8B2;
+}
+
 .color-secondary, div.nav ul li a.disabled {
   color: #531253;
 }
