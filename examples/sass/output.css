@@ -1,3 +1,26 @@
+.color-secondary, div.nav ul li a.disabled {
+  color: #531253;
+}
+
+div.nav {
+  background-color: #531253;
+  color: #97D8B2;
+}
+div.nav ul {
+  text-align: center;
+}
+div.nav ul li a {
+  font-family: "Arial";
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: underline;
+  color: #97D8B2;
+}
+div.nav ul li a.disabled {
+  text-decoration: none;
+}
+
 /*
 :root {
     --primary-color: $primary-color;
@@ -6,41 +29,11 @@
 div {
     color: var(--primary-color);
 }
-    */
-.color-secondary, html div.nav ul li a.disabled {
-  color: #531253;
-}
+    *
 
 html {
-  font-size: 14px;
+    font-size: $font-size;
 }
-html div.nav {
-  background-color: #531253;
-  color: #A0ACAD;
-}
-html div.nav ul {
-  text-align: center;
-}
-html div.nav ul li a {
-  font-family: "Arial";
-  font-weight: 500;
-  font-size: 15px;
-  font-weight: 800;
-  text-decoration: underline;
-  color: #A0ACAD;
-}
-html div.nav ul li a.disabled {
-  text-decoration: none;
-}
-
-.back-button, .home-button {
-  margin: 5px;
-  border-radius: 2px;
-  padding: 0.2em;
-}
-
-.home-button {
-  background-color: #A0ACAD;
-}
+*/
 
 /*# sourceMappingURL=output.css.map */

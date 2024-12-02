@@ -1,0 +1,26 @@
+@use './config' as c;
+@use './mixins';
+
+.color-secondary {
+    color: c.$secondary-color;
+}
+
+div.nav {
+    background-color: c.$secondary-color;
+    color: c.$primary-color;
+    ul {
+        text-align: center;
+        li a {
+            font: {
+                family: 'Arial';
+                weight: 500;
+                size: 15px;
+            }
+            @include mixins.text-primary-bold;
+            &.disabled {
+                @extend .color-secondary;
+                text-decoration: none;
+            }
+        }
+    }
+}

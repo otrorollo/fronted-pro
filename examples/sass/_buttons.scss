@@ -1,0 +1,14 @@
+// Placeholder selectors
+// Cuando no necesitamos una clase pero si unos estilos base
+%button-scope {
+    margin: 5px;
+    border-radius: 2px;
+    padding: 0.2em;
+}
+.home-button {
+    @extend %button-scope;
+    background-color: $primary-color;
+}
+.back-button {
+    @extend %button-scope;
+}

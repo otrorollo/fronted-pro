@@ -1,6 +1,7 @@
+@use './config';
 // Los mixins son porciones de SCSS que podemos utilizar
 @mixin text-primary-bold {
     font-weight: 800;
     text-decoration: underline;
-    color: $primary-color;
+    color: config.$primary-color;
 }

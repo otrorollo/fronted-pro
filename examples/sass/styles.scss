@@ -1,5 +1,9 @@
-@import './config';
-@import './mixins';
+// Los archivos con miembros exportados (funciones, variables o mixins)
+// No se importan globalmente. Se utiliza la sentencia @use donde se vaya a utilizar
+// @import './config';
+// @import './mixins';
+@import './header';
+// @import './buttons';
 
 // ....
 // Otro código
@@ -18,48 +22,11 @@ $primary-color: #A0ACAD;
 div {
     color: var(--primary-color);
 }
-    */
-
-.color-secondary {
-    color: $secondary-color;
-}
+    *
 
 html {
     font-size: $font-size;
-    div.nav {
-        background-color: $secondary-color;
-        color: $primary-color;
-        ul {
-            text-align: center;
-            li a {
-                font: {
-                    family: 'Arial';
-                    weight: 500;
-                    size: 15px;
-                }
-                @include text-primary-bold;
-                &.disabled {
-                    @extend .color-secondary;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
 }
-
-// Placeholder selectors
-// Cuando no necesitamos una clase pero si unos estilos base
-%button-scope {
-    margin: 5px;
-    border-radius: 2px;
-    padding: 0.2em;
-}
-.home-button {
-    @extend %button-scope;
-    background-color: $primary-color;
-}
-.back-button {
-    @extend %button-scope;
-}
+*/
 
 
