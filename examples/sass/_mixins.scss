@@ -6,11 +6,16 @@
     color: config.$primary-color;
 }
 
-@mixin brand-color($selector, $valor-sass, $valor-scss) {
-    body.scss & {
-        #{$selector}: $valor-scss;
+@mixin brand-color($selector, $valor-audi, $valor-vw) {
+    body.audi & {
+        #{$selector}: $valor-audi;
     }
-    body.sass & {
-        #{$selector}: $valor-sass;
+    body.vw & {
+        #{$selector}: $valor-vw;
     }
 }
+
+// TODO: Mixin de brand color con map
+// Podemos reescribir el mixin anterior utilizando un map de N valores?
+// https://sass-lang.com/documentation/values/maps/#do-something-for-every-pair
+

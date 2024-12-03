@@ -15,17 +15,17 @@
 div.nav {
   color: #22bc62;
 }
-body.scss div.nav {
-  background-color: #22bc62;
-}
-body.sass div.nav {
+body.audi div.nav {
   background-color: #531253;
 }
-body.scss div.nav h3 {
-  color: #531253;
+body.vw div.nav {
+  background-color: #22bc62;
 }
-body.sass div.nav h3 {
+body.audi div.nav h3 {
   color: #22bc62;
+}
+body.vw div.nav h3 {
+  color: #531253;
 }
 div.nav ul {
   text-align: center;
