@@ -1,15 +1,15 @@
-@use './config' as c;
+@use './config' as *;
 @use './mixins';
 
 .color-secondary {
-    color: c.$secondary-color;
+    color: $secondary-color;
 }
 
 div.nav {
-    background-color: c.$secondary-color;
-    color: c.$primary-color;
+    background-color: $secondary-color;
+    color: $primary-color;
     h3 {
-        color: c.$primary-light-color;
+        color: $primary-light-color;
     }
     ul {
         text-align: center;

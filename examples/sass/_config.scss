@@ -1,10 +1,13 @@
+@use 'sass:color';
+
 // Variables
 $primary-color: #22bc62;
 $secondary-color: #531253;
 $font-size: 14px;
 
 
-$primary-light-color: lighten($primary-color, 40%) !default;
+// $primary-light-color: lighten($primary-color, 40%) !default; // Las funciones de color globales estan deprecadas en sass.
+$primary-light-color: color.adjust($primary-color, $lightness: 40%); // Es recomendable utilizar el módulo de sass:color
 $primary-dark-color: darken($primary-color, 6%) !default;
 $primary-darker-color: darken($primary-color, 12%) !default;
 $primary-text-color: #ffffff !default;
