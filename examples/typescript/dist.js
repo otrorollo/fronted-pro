@@ -2,6 +2,7 @@
 var Library = /** @class */ (function () {
     function Library() {
         this.items = [];
+        this.createtAt = new Date();
     }
     Library.prototype.add = function (item) {
         this.items.push(item);
@@ -39,3 +40,16 @@ var bookLibrary = new Library();
 var magazineLibrary = new Library();
 bookLibrary.add(book1);
 console.log(bookLibrary.list());
+// --- clonando axios
+function get(path) {
+    return fetch(path)
+        .then(function (res) { return res.json(); })
+        .then(function (json) { return json; });
+}
+;
+var books = await get('/books');
+// TODO para el jueves:
+// Ejercicio 1: Seriamos capaces de TIPAR la clase Library?
+// 1. Añadir la propiedad location (p.e. Sala 1)
+// 2. Añadir propiedad topic.
+// 3. Mantener el uso de genericos.
