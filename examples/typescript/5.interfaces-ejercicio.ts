@@ -10,3 +10,33 @@
  * Define un array con 3 productos distintos.
  * 
  */
+
+interface Product {
+    name: string;
+    price: number;
+    description: string;
+    category: string;
+}
+
+const products: Product[] = [
+    {
+        name: "Laptop",
+        price: 1000,
+        description: "A laptop",
+        category: "Electronics"
+    },
+    {
+        name: "Shirt",
+        price: 20,
+        description: "A shirt",
+        category: "Clothing"
+    },
+    {
+        name: "Book",
+        price: 10,
+        description: "A book",
+        category: "Books"
+    }
+];
+
+console.table(products);
