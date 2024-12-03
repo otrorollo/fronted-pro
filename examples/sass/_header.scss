@@ -12,6 +12,7 @@ div.nav {
     h3 {
         // color: $primary-light-color;
         @include mixins.brand-color(color, $primary-color, $secondary-color);
+        @include mixins.brand-color-map(color, ("audi": #22bc62, "skoda": #531253, "seat": #ffffff, "ducati": red))
     }
     ul {
         text-align: center;

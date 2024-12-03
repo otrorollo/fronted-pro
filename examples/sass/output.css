@@ -27,6 +27,18 @@ body.audi div.nav h3 {
 body.vw div.nav h3 {
   color: #531253;
 }
+body.audi div.nav h3 {
+  color: #22bc62;
+}
+body.skoda div.nav h3 {
+  color: #531253;
+}
+body.seat div.nav h3 {
+  color: #ffffff;
+}
+body.ducati div.nav h3 {
+  color: red;
+}
 div.nav ul {
   text-align: center;
 }
