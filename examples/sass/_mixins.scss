@@ -5,3 +5,12 @@
     text-decoration: underline;
     color: config.$primary-color;
 }
+
+@mixin brand-color($selector, $valor-sass, $valor-scss) {
+    body.scss & {
+        #{$selector}: $valor-scss;
+    }
+    body.sass & {
+        #{$selector}: $valor-sass;
+    }
+}

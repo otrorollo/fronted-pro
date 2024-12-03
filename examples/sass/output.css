@@ -13,11 +13,19 @@
 }
 
 div.nav {
-  background-color: #531253;
   color: #22bc62;
 }
-div.nav h3 {
-  color: rgb(183.8648648649, 242.1351351351, 208.0810810811);
+body.scss div.nav {
+  background-color: #22bc62;
+}
+body.sass div.nav {
+  background-color: #531253;
+}
+body.scss div.nav h3 {
+  color: #531253;
+}
+body.sass div.nav h3 {
+  color: #22bc62;
 }
 div.nav ul {
   text-align: center;

@@ -6,10 +6,12 @@
 }
 
 div.nav {
-    background-color: $secondary-color;
+    //background-color: $secondary-color; // Este color debe cambiar en funcion de una clase global Si body.sass &primary-color si body.scss $secondary-color
+    @include mixins.brand-color(background-color, $secondary-color, $primary-color);
     color: $primary-color;
     h3 {
-        color: $primary-light-color;
+        // color: $primary-light-color;
+        @include mixins.brand-color(color, $primary-color, $secondary-color);
     }
     ul {
         text-align: center;
