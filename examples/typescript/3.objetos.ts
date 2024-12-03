@@ -14,6 +14,10 @@ const brands: string[] = [
     'Seat',
 ];
 
+function getCarBrand(item: typeof car): string {
+    return item.brand;
+}
+
 const brands2: Array<string> = brands;
 const teslaModels: (string|number)[] = [];
 let tataModels: unknown[] | undefined;

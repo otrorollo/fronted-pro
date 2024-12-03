@@ -10,7 +10,7 @@
     "sass:example": "sass examples/sass/styles.scss examples/sass/output.css",
     "sass:example:dev": "sass --watch examples/sass/styles.scss examples/sass/output.css",
     "ts:build": "tsc examples/typescript/3.objetos.ts --outFile examples/typescript/dist.js",
-    "ts:build:dev": "tsc examples/typescript/3.objetos.ts --watch --outFile examples/typescript/dist.js"
+    "ts:build:dev": "tsc examples/typescript/4.interfaces.ts --watch --outFile examples/typescript/dist.js"
   },
   "keywords": [],
   "author": "",

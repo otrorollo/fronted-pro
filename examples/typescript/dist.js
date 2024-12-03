@@ -1,21 +1,34 @@
-var car = {
+var Brands;
+(function (Brands) {
+    Brands["AUDI"] = "Audi";
+    Brands["SKODA"] = "Skoda";
+})(Brands || (Brands = {}));
+var audiA4Car = {
     brand: 'Audi',
     model: 'A4',
     year: 2021,
-};
-var brands = [
-    'Toyota',
-    'Audi',
-    'Seat',
-];
-var brands2 = brands;
-var teslaModels = [];
-var tataModels;
-function getCarYear(car) {
-    if (car.year < 2020) {
-        return car.year;
+    start: function () {
+        console.log("Start");
     }
-    return car.year.toFixed(2);
-}
-// let carYear: number;
-// carYear = getCarYear({brand: 'Seat', model: 'Ibiza', year: 2021});
+};
+var audiA3Car = {
+    brand: 'Audi',
+    model: 'A3',
+    year: 2023,
+    start: function () {
+        console.log('Engine ON :)');
+    }
+};
+var getCarBrand = function (item) {
+    // return item.color; -> Devolveria un error, la propiedad color no existe en Car
+    // return 'Hola desde getCarBrand'; // -> Es ok, devolvemos un string.
+    console.log("La marca es: ".concat(item.brand));
+    return "".concat(item.brand);
+};
+getCarBrand({
+    brand: 'Skoda',
+    model: 'Fabia',
+    start: function () {
+        console.log("Start");
+    }
+});
