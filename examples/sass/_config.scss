@@ -4,6 +4,8 @@
 $primary-color: #22bc62;
 $secondary-color: #531253;
 $font-size: 14px;
+// Se pueden calcular variables
+$title-font-size: $font-size * 1.1;
 
 
 // $primary-light-color: lighten($primary-color, 40%) !default; // Las funciones de color globales estan deprecadas en sass.
