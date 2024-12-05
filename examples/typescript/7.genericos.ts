@@ -65,17 +65,80 @@ console.log(bookLibrary.list())
 
 // --- clonando axios
 
-function get<T>(path: string) {
-    return fetch(path)
-        .then(res => res.json())
-        .then(json => json as T)
-};
+// function get<T>(path: string) {
+//     return fetch(path)
+//         .then(res => res.json())
+//         .then(json => json as T)
+// };
 
-const books = await get<IBook[]>('/books')
+// const books = await get<IBook[]>('/books')
 
 
 // TODO para el jueves:
-// Ejercicio 1: Seriamos capaces de TIPAR la clase Library?
-// 1. Añadir la propiedad location (p.e. Sala 1)
-// 2. Añadir propiedad topic.
-// 3. Mantener el uso de genericos.
+// Ejercicio 1: Seriamos capaces de TIPAR la clase Library? OK
+// 1. Añadir la propiedad location (p.e. Sala 1) OK
+// 2. Añadir propiedad topic. OK
+// 3. Mantener el uso de genericos. OK
+
+interface ILibrary<T> {
+    readonly items: T[];
+    createdAt: Date;
+    // location: string;
+    // topic: string;
+    add: (item: T) => void;  // Suma:   const suma = (n1, n2) => n1 + n2;
+    list: () => void;
+    get?: () => T[];
+}
+
+interface IBookLibrary {
+    readonly items: IBook[];
+    createdAt: Date;
+    // location: string;
+    // topic: string;
+    add: (item: IBook) => void;  // Suma:   const suma = (n1, n2) => n1 + n2;
+    list: () => void;
+    get?: () => IBook[];
+}
+
+
+
+
+const libraryObject: ILibrary<IBook> = {
+    items: [],
+    createdAt: new Date(),
+    add: (item: IBook) => console.log(item),
+    list: () => this.items,
+};
+
+const libraryObject2: ILibrary<IMagazine> = {
+    items: [],
+    createdAt: new Date(),
+    add: (item: IMagazine) => console.log(item),
+    list: () => this.items,
+};
+
+
+
+
+class NewLibrary<T> implements ILibrary<T> {
+    readonly items: Array<T> = [];
+    public createdAt: Date;
+    constructor() {
+        this.createdAt = new Date();
+    }
+    public add(item: T): void {
+        this.items.push(item); // -------> x001fa
+    }
+
+    // private reset() {
+    //     this.items = []; // -------> x001fb (Con el = asignamos valores, readonly no permite REASIGNAR)
+    // }
+
+    public list(): void {
+        console.table(this.items)
+    }
+}
+const library2 = new NewLibrary<IBook>();
+// library2.items = []; // Si intentamos reasignar nos da error.
+
+
