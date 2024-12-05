@@ -1,22 +1,22 @@
-'use strict';
 
-function startCountdown() {
-    const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
+function startCountdown(): void {
+    const second = 1000;
+    const minute = second * 60;
+    const hour = minute * 60;
+    const day = hour * 24;
 
-        let today = new Date(),
-        dd = String(today.getDate()).padStart(2, "0"),
-        mm = String(today.getMonth() + 1).padStart(2, "0"),
-        yyyy = today.getFullYear(),
-        nextYear = yyyy + 1,
-        dayMonth = "11/11/",
-        birthday = dayMonth + yyyy;
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, "0");
+    const mm = String(today.getMonth() + 1).padStart(2, "0");
+    const yyyy = today.getFullYear();
+    const nextYear = yyyy + 1;
+    const dayMonth = "11/11/";
+    const birthday = new Date(dayMonth + yyyy);
     
-    today = mm + "/" + dd + "/" + yyyy;
+    const todayStr = mm + "/" + dd + "/" + yyyy;
+    let birthdayStr;
     if (today > birthday) {
-      birthday = dayMonth + nextYear;
+      birthdayStr = dayMonth + nextYear;
     }
     //end
     
@@ -26,16 +26,16 @@ function startCountdown() {
           const now = new Date().getTime(),
                 distance = countDown - now;
   
-          document.getElementById("days").innerText = Math.floor(distance / (day)),
-            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+            document.getElementById("days")!.innerText = Math.floor(distance / (day)).toString(),
+            document.getElementById("hours")!.innerText = Math.floor((distance % (day)) / (hour)).toString(),
+            document.getElementById("minutes")!.innerText = Math.floor((distance % (hour)) / (minute)).toString(),
+            document.getElementById("seconds")!.innerText = Math.floor((distance % (minute)) / second).toString();
   
           //do something later when date is reached
           if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
-            document.getElementById("countdown").style.display = "none";
-            document.getElementById("content").style.display = "block";
+            document.getElementById("headline")!.innerText = "It's my birthday!";
+            document.getElementById("countdown")!.style.display = "none";
+            document.getElementById("content")!.style.display = "block";
             clearInterval(x);
           }
           //seconds
