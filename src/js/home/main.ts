@@ -1,5 +1,9 @@
+import { DateTime } from "luxon";
 
 function startCountdown(): void {
+    const datetime = DateTime.now().setZone('America/New_York');
+    console.log(datetime);
+
     const second = 1000;
     const minute = second * 60;
     const hour = minute * 60;
