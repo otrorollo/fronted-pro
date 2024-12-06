@@ -1,4 +1,4 @@
-# KeepCoding Web Bootcamp XVII - Frontend PRO
+# KeepCoding Web Bootcamp XVII - Clase Frontend PRO
 
 <div align="center">
     <img src="https://bootcamp.keepcoding.io/hs-fs/hubfs/logo%20keepcoding%20mail%20temarios@2x-100.jpg?width=300&height=175&name=logo%20keepcoding%20mail%20temarios@2x-100.jpg" alt="KeepCoding Web Bootcamp XV - Frontend PRO">
